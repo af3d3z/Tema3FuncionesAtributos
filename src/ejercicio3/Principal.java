@@ -7,6 +7,7 @@ public class Principal {
 
 	static Scanner sc = new Scanner(System.in);
 	
+	// muestra el menú y pide el número al usuario hasta que dé un número válido
 	static int menu() {
 		int opcion = 0;
 		
@@ -27,6 +28,7 @@ public class Principal {
 		return opcion;
 	}
 	
+	// pide el radio del círculo al usuario
 	static double pideRadio () {
 		double radio = 0;
 		
@@ -44,7 +46,9 @@ public class Principal {
 	}
 	
 	public static void main(String[] args) {
+		// guarda el resultado de lo que elija el usuario en el menú
 		int opcion;
+		// guarda el radio introducido por el usuario
 		double radio;
 		double resultado = 0;
 		

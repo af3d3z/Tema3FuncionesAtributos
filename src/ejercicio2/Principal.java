@@ -7,6 +7,7 @@ public class Principal {
 
 	static Scanner sc = new Scanner(System.in);
 	
+	// pedimos un número al usuario y comprobamos que la opción introducida por el usuario es válida y si no lo es vuelve a preguntarle al usuario
 	static int menu() {
 		int opcion = -1;
 		
@@ -27,6 +28,7 @@ public class Principal {
 		return opcion;
 	}
 	
+	// pide el ancho y si no es un valor real vuelve a preguntarlo
 	static double pideAncho() {
 		int ancho = 0;
 		
@@ -42,6 +44,7 @@ public class Principal {
 		return ancho;
 	}
 	
+	// pide el alto y si no es un valor real vuelve a preguntarlo
 	static double pideAlto() {
 		int alto = 0;
 		
@@ -58,7 +61,9 @@ public class Principal {
 	}
 	
 	public static void main(String[] args) {
+		// guardará la opción seleccionada en el menú
 		int opcion;
+		// guardan el ancho y alto introducidos por el usuario
 		double ancho, alto;
 		double resultado = 0;
 		

@@ -24,8 +24,8 @@ public class Principal {
 		return opcion;
 	}
 	
+	// pide un número al usuario y lo devuelve
 	static double pideNumero() {
-		boolean continuar = true;
 		double entradaUsuario = -1;
 		
 		do {
@@ -51,6 +51,7 @@ public class Principal {
 		
 		opcion = menu();
 		
+		// comprobamos que la opción seleccionada es válida
 		if(opcion <= 0 || opcion > 6) {
 			System.out.println("¡Hasta luego!");
 		}else {
@@ -96,7 +97,6 @@ public class Principal {
 		}
 			
 	}
-		
 		sc.close();
 	}
 
